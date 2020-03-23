@@ -69,14 +69,40 @@
             </objects>
             <point key="canvasLocation" x="-545" y="-81"/>
         </scene>
+        <!--Web-->
+        <scene sceneID="69O-2X-TmF">
+            <objects>
+                <viewController id="woc-EX-xZk" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oQu-V5-AAA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Cs-d0-g9r">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VvO-fr-4te"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" id="OTM-hw-8C0"/>
+                    <connections>
+                        <outlet property="webView" destination="0Cs-d0-g9r" id="Pay-Eb-IPY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1m-yF-pCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517.39130434782612" y="750"/>
+        </scene>
         <!--Map-->
         <scene sceneID="itY-3K-fBu">
             <objects>
-                <viewController id="fh9-at-9c2" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="RL9-cV-zeY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                <viewController id="fh9-at-9c2" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" selectedImage="MapIcon" id="xyU-k7-p37"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4I1-TA-Leh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,10 +115,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FM8-aV-RcP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LBS-2f-gwT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="woc-EX-xZk" kind="relationship" relationship="viewControllers" id="Vb9-nE-iUY"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Hh4-gi-xbE"/>
                         <segue destination="fh9-at-9c2" kind="relationship" relationship="viewControllers" id="Mog-9K-ary"/>
                     </connections>
