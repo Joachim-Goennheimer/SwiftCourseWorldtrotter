@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0BD47A242897EB0099B66A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BD479242897EB0099B66A /* MapViewController.swift */; };
 		9AD0BD592410292D007CF231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0BD582410292D007CF231 /* AppDelegate.swift */; };
 		9AD0BD5B2410292D007CF231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0BD5A2410292D007CF231 /* SceneDelegate.swift */; };
 		9AD0BD602410292D007CF231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0BD5E2410292D007CF231 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A0BD479242897EB0099B66A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9AD0BD552410292D007CF231 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD0BD582410292D007CF231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD0BD5A2410292D007CF231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				9AD0BD582410292D007CF231 /* AppDelegate.swift */,
 				9AD0BD5A2410292D007CF231 /* SceneDelegate.swift */,
 				9AD0BD8824102D1A007CF231 /* ConversionViewController.swift */,
+				9A0BD479242897EB0099B66A /* MapViewController.swift */,
 				9AD0BD5E2410292D007CF231 /* Main.storyboard */,
 				9AD0BD6124102933007CF231 /* Assets.xcassets */,
 				9AD0BD6324102933007CF231 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				9AD0BD592410292D007CF231 /* AppDelegate.swift in Sources */,
 				9AD0BD8924102D1A007CF231 /* ConversionViewController.swift in Sources */,
 				9AD0BD5B2410292D007CF231 /* SceneDelegate.swift in Sources */,
+				9A0BD47A242897EB0099B66A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
