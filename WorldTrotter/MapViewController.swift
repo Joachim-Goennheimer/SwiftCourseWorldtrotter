@@ -70,10 +70,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.view.addSubview(annotationsButton)
         
         
-        let annotationLocationOfBirth = MKPointAnnotation()
-        annotationLocationOfBirth.title = "city of birth"
-        annotationLocationOfBirth.subtitle = "the city I was born in"
-        
         print("MapViewController loaded")
     }
     
@@ -122,6 +118,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         var latitude: CLLocationDegrees
         var longitude: CLLocationDegrees
         
+        showLocation = false
         
         switch nextAnnotation {
         case 1:
