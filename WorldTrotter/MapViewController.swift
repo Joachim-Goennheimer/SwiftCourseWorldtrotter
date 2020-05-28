@@ -140,7 +140,23 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             nextAnnotation = 2
             
         case 2:
-            button.sendActions(for: .touchUpInside)
+//            button.sendActions(for: .touchUpInside)
+            latitude = 48.6791
+            longitude = 8.8957
+            
+            let latDelta: CLLocationDegrees = 0.05
+            let lonDelta: CLLocationDegrees = 0.05
+            let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            let region = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Aidlingen"
+            annotation.subtitle = "Where I currently live"
+            mapView.addAnnotation(annotation)
+            nextAnnotation = 1
             nextAnnotation = 3
         case 3:
             latitude = 37.5665
